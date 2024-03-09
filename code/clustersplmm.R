@@ -194,7 +194,7 @@ clustersplmm <- function(x,y,z,grp,time,lam1,lam2,nCluster,nonpen.b=1,nonpen.L=1
   #while (counter<2) {
   
   
-  while((counter<control$maxIter)&(convFct2<0|counter<1)&((convPar>control$tol|convFct>control$tol|convCov>control$tol|!doAll ))) {
+  while((counter<control$maxIter)&(convFct2<0|counter<1)&((convPar>control$tol|convFct[1]>control$tol|convCov>control$tol|!doAll ))) {
     #while((counter<control$maxIter)&((convPar>control$tol|convFct>control$tol|convCov>control$tol|!doAll ))) {
     counter <- counter + 1 
     
